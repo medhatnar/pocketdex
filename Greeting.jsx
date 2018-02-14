@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
 
 class PersonalGreeting extends Component {
   render() {
@@ -12,8 +12,10 @@ class PersonalGreeting extends Component {
 class Greeting extends Component {
   render() {
     return (
+      <View>
       <PersonalGreeting name='Friend!' />
-      <Text style={{colo r:'rebeccapurple', fontWeight: "bold"}} >Welcome to { this.props.webSiteName } ! This mobile app provides a visual representation of a locations air quality.</Text>
+      <Text style={{color:'rebeccapurple', fontWeight: "bold"}} >Welcome to { this.props.webSiteName } ! This mobile app provides a visual representation of a locations air quality.</Text>
+      </View>
     );
   }
 };
