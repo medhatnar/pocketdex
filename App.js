@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity, TextInput, FlatList, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, TextInput, FlatList, ScrollView, Image, Alert } from 'react-native';
 
 class PersonalGreeting extends Component {
   render() {
@@ -51,7 +51,7 @@ getPokemonData (pokemon) {
       this.addToDatabase();
     })
     .catch((err) => {
-      Alert.alert('You have entered')
+      Alert.alert('You have not entered a valid id or name.')
     });
 
 }
