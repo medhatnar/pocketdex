@@ -5,11 +5,24 @@ import Greeting from './Greeting.js';
 import CustomButton from './Button.js';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+      this.state = {
+        showGreeting: true,
+      }
+  }
+
+  changeGreetingState () {
+    console.log('yo')
+    this.setState({showGreeting: !this.state.showGreeting});
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Greeting color='blue' name='friend' webSiteName='PocketDex 1.0' />
-        <CustomButton />
+        {this.state.showGreeting ? <Greeting color='blue' name='friend' webSiteName='PocketDex 1.0' /> : null}
+        <CustomButton stateChangingAction={ () => this.setState({showGreeting: !this.state.showGreeting}) } />
       </View>
     );
   }

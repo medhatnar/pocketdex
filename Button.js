@@ -7,9 +7,7 @@ class CustomButton extends Component {
       <TouchableOpacity activeOpacity={1}>
         <Button
           color='#93211f'
-          onPress={() => {
-            Alert.alert('YOU PRESSED ME!');
-          }}
+          onPress={this.props.stateChangingAction}
           title="Press Me"
         />
         </TouchableOpacity>
