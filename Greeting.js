@@ -14,7 +14,7 @@ class Greeting extends Component {
     return (
       <View>
       <PersonalGreeting name='Friend!' />
-      <Text style={{color:'rebeccapurple', fontWeight: "bold"}} >Welcome to { this.props.webSiteName } ! This mobile app provides a visual representation of a locations air quality.</Text>
+      <Text style={{color:'rebeccapurple', fontWeight: "bold"}} >Welcome to { this.props.webSiteName } ! </Text>
       </View>
     );
   }
