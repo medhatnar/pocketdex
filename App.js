@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Alert } from 'react-native';
 
 import Greeting from './Greeting.js';
-import CustomButton from './Button.js';
+import CustomForm from './CustomForm.js';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
 
       this.state = {
-        showGreeting: true,
+        text: '',
       }
-  }
-
-  changeGreetingState () {
-    console.log('yo')
-    this.setState({showGreeting: !this.state.showGreeting});
   }
 
   render() {
     return (
       <View style={styles.container}>
-        {this.state.showGreeting ? <Greeting color='blue' name='friend' webSiteName='PocketDex 1.0' /> : null}
-        <CustomButton stateChangingAction={ () => this.setState({showGreeting: !this.state.showGreeting}) } />
+        <Greeting color='blue' name='friend' webSiteName='PocketDex 1.0' />
+        <CustomForm
+        textChangeAction={(newText) => this.setState({text: newText})}
+        buttonAction={() => Alert.alert(this.state.text)}
+        />
       </View>
     );
   }
