@@ -20,4 +20,7 @@ class Greeting extends Component {
   }
 };
 
-export default Greeting;
+export {
+  PersonalGreeting,
+  Greeting,
+}
