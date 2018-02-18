@@ -7,7 +7,7 @@ class CustomForm extends Component {
     <View>
       <TextInput
         style={{height: 40}}
-        placeholder='type some stuff'
+        placeholder='Enter a number or pokemon name'
         onChangeText={this.props.textChangeAction}
         ref={input => { this.textInput = input }}
       />
