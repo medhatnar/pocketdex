@@ -22,8 +22,8 @@ export default class App extends React.Component {
         textChangeAction={(newText) => this.setState({text: newText})}
         buttonAction={() => Alert.alert(this.state.text)}
         />
-        <ScrollView>
-          <PersonalGreeting color='green' name='friend' />
+        <ScrollView horizontal={true}>
+          <PersonalGreeting color='green' name='friendriendriendriendriendriendriendriendriendriendriendriendriendriendriendriendriendriend' />
           <PersonalGreeting color='green' name='friend' />
           <PersonalGreeting color='green' name='friend' />
           <PersonalGreeting color='green' name='friend' />
