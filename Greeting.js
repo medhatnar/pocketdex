@@ -14,7 +14,7 @@ class Greeting extends Component {
     return (
       <View>
       <PersonalGreeting name='Friend!' />
-      <Text style={{color:'rebeccapurple', fontWeight: "bold"}} >Welcome to { this.props.webSiteName } ! </Text>
+      <Text style={{color:'rebeccapurple', fontWeight: "bold"}} selectable={true} >Welcome to { this.props.webSiteName } ! </Text>
       </View>
     );
   }

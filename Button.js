@@ -4,7 +4,7 @@ import { Button, TouchableOpacity, Alert } from 'react-native';
 class CustomButton extends Component {
   render () {
     return (
-      <TouchableOpacity activeOpacity={1}>
+      <TouchableOpacity activeOpacity={5}>
         <Button
           color='#93211f'
           onPress={() => {
