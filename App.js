@@ -14,7 +14,7 @@ export default class App extends React.Component {
   }
 
   changeGreetingState () {
-    console.log('yo')
+    console.log('yo');
     this.setState({showGreeting: !this.state.showGreeting});
   }
 
